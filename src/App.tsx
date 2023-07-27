@@ -1,4 +1,4 @@
-import PanelUser from "./components/PanelUser";
+import AppCrudUsers from "./components/AppCrudUsers";
 function App() {
   // const [dbUser, setDbUser] = useState<UserData[]>([]);
   // const addUser = (data: StateApp["addUser"]) => {
@@ -50,7 +50,7 @@ function App() {
       <button onClick={() => deleteUser("1")}>eliminado</button> */}
       <h1 className="font-extrabold text-red-600 ">Hola Aracely</h1>
       <div className="flex justify-center items-center min-h-screen ">
-        <PanelUser/>
+        <AppCrudUsers/>
       </div>
     </>
   );

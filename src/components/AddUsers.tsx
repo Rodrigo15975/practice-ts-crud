@@ -8,16 +8,19 @@ const AddUsers = () => {
   const openAddUser = () => {
     openModal(setAbrir, abrir);
   };
+  const close = () => {
+    setAbrir(!abrir);
+  };
 
   return (
     <div>
       <button
-        className="bg-black text-white p-4 rounded-sm"
+        className="bg-black text-white p-4 rounded-sm m-1"
         onClick={openAddUser}
       >
         Add Users
       </button>
-      <div>{abrir && <ModalAddUser />}</div>
+      <div>{abrir && <ModalAddUser setState={close} />}</div>
     </div>
   );
 };
